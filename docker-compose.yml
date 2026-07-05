@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: vuln_web_app
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
